@@ -1,0 +1,34 @@
+.card {
+  min-width: 300px !important
+}
+
+.container {
+  max-width: 100vw !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.color-header-0 {
+  background-color: #1C1A1C !important;
+}
+
+.color-header-1 {
+  background-color: #363537 !important;
+}
+
+.bg-0 {
+  background-color: #4B4A4C !important;
+}
+
+.bg-1 {
+  background-color: #232123 !important;
+}
+
+.bg-card {
+  background-color: #363537 !important;
+}
+
+.bg-button {
+  background-color: #556BF9 !important;
+  border-color: #556BF9 !important;
+}
