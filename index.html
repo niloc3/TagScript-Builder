@@ -23,6 +23,44 @@
 </head>
 
 <body class="color-header-0 text-white overflow-hidden">
+  
+<!-- Modals -->
+<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="bg-card modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Feature Name</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>I am a feature description. Doing a lot of stuff is my job! You can fill the fields below regarding my settings, and add me!</p>
+        <form>
+          <div class="mb-3">
+            <label for="label" class="form-label">Label</label>
+            <input type="text" class="form-control text-white bg-1" placeholder="Text" id="label1">
+          </div>
+          <div class="mb-3">
+            <label for="label" class="form-label">Label</label>
+            <input type="text" class="form-control text-white bg-1" placeholder="Text" id="label2">
+          </div>
+          <div class="mb-3">
+            <label for="label" class="form-label">Label</label>
+            <input type="text" class="form-control text-white bg-1" placeholder="Text" id="label3">
+          </div>
+          <div class="mb-3 form-check form-switch">
+            <label for="label" class="form-label">Label</label>
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+          </div>
+        </form>
+      </div>
+      <div class="d-flex modal-footer">
+        <button type="button" class="btn btn-secondary">Copy</button>
+        <button type="button" data-bs-dismiss="modal" class="flex-grow-1 btn bg-button">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Navbar Start -->
     <nav class="sticky-top navbar navbar-dark color-header-0">
@@ -40,7 +78,6 @@
         <div class="row">
             <div class="flex-nowrap w-50 col h-100vh overflow-auto bg-0 pe-0 ps-0">
                 <!-- Builder Side -->
-
                 <!-- Nav For Tag Snippet Side -->
                 <nav class="sticky-top navbar navbar-expand-lg navbar-dark color-header-1 m-0">
                     <div class="container-fluid">
@@ -84,7 +121,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                                 temporibus molestiae fugit delectus blanditiis numquam.</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -92,7 +129,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Dolores, cupiditate explicabo, sit maxime eligendi voluptatibus ipsum
                                 culpa aut porro, incidunt nesciunt mollitia placeat.</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -100,7 +137,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Minus tempore, ea, dicta nihil delectus amet nobis asperiores rem et
                                 voluptates, praesentium incidunt itaque!</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -108,7 +145,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Debitis impedit unde dolorum officia facilis itaque asperiores non
                                 omnis, quo quis autem veritatis praesentium!</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -116,7 +153,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Vel ipsam quod, ullam inventore voluptate reiciendis dolores et vitae
                                 officia exercitationem error quisquam perferendis?</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                 </div>
@@ -131,7 +168,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                                 temporibus molestiae fugit delectus blanditiis numquam.</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -139,7 +176,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Dolores, cupiditate explicabo, sit maxime eligendi voluptatibus ipsum
                                 culpa aut porro, incidunt nesciunt mollitia placeat.</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -147,7 +184,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Minus tempore, ea, dicta nihil delectus amet nobis asperiores rem et
                                 voluptates, praesentium incidunt itaque!</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -155,7 +192,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Debitis impedit unde dolorum officia facilis itaque asperiores non
                                 omnis, quo quis autem veritatis praesentium!</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -163,7 +200,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Vel ipsam quod, ullam inventore voluptate reiciendis dolores et vitae
                                 officia exercitationem error quisquam perferendis?</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                 </div>
@@ -178,7 +215,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                                 temporibus molestiae fugit delectus blanditiis numquam.</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -186,7 +223,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Dolores, cupiditate explicabo, sit maxime eligendi voluptatibus ipsum
                                 culpa aut porro, incidunt nesciunt mollitia placeat.</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -194,7 +231,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Minus tempore, ea, dicta nihil delectus amet nobis asperiores rem et
                                 voluptates, praesentium incidunt itaque!</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -202,7 +239,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Debitis impedit unde dolorum officia facilis itaque asperiores non
                                 omnis, quo quis autem veritatis praesentium!</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -210,7 +247,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Vel ipsam quod, ullam inventore voluptate reiciendis dolores et vitae
                                 officia exercitationem error quisquam perferendis?</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                 </div>
@@ -225,7 +262,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                                 temporibus molestiae fugit delectus blanditiis numquam.</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -233,7 +270,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Dolores, cupiditate explicabo, sit maxime eligendi voluptatibus ipsum
                                 culpa aut porro, incidunt nesciunt mollitia placeat.</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -241,7 +278,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Minus tempore, ea, dicta nihil delectus amet nobis asperiores rem et
                                 voluptates, praesentium incidunt itaque!</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -249,7 +286,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Debitis impedit unde dolorum officia facilis itaque asperiores non
                                 omnis, quo quis autem veritatis praesentium!</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                     <div class="card m-3 bg-card">
@@ -257,7 +294,7 @@
                             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                             <p class="card-text">Vel ipsam quod, ullam inventore voluptate reiciendis dolores et vitae
                                 officia exercitationem error quisquam perferendis?</p>
-                            <a href="#" class="btn btn-primary bg-button w-100">Use</a>
+                            <button type="button" class="btn btn-primary bg-button w-100" data-bs-toggle="modal" data-bs-target="#testModal">Use</button>
                         </div>
                     </div>
                 </div>
@@ -270,7 +307,7 @@
 
             <div id="code" class="w-50 col h-100vh overflow-auto bg-1 pe-0 ps-0 border-start border-3">
                 <!-- Code Side -->
-                <!-- Nav For Tag Snippet Side -->
+                <!-- Nav For Code Side -->
                 <nav class="sticky-top navbar navbar-expand-lg navbar-dark color-header-1 m-0">
                     <div class="container-fluid">
                         <a class="navbar-brand nav-link padding-custom" href="#">Code Output</a>
@@ -282,9 +319,9 @@
                         <div class="collapse navbar-collapse d-flex flex-grow-0" id="navbarSupportedContent">
                                 <ul class="navbar-nav d-flex me-auto mb-2 mb-lg-0">
                                     <li class="nav-item p-0">
-                                        <span class="p-4 nav-item">Brackets: ✅</span>
-                                        <span class="p-4 nav-item">Lines: 57</span>
-                                        <span class="p-4 nav-item">Characters: 3454</span>
+                                        <span class="p-4 nav-item">Brackets: <span id="isBalanced">✅</span></span>
+                                        <span class="p-4 nav-item">Lines: <span id="lineCount">0</span></span>
+                                        <span class="p-4 nav-item">Characters: <span id="charCount">0</span></span>
                                     </li>
                                 </ul>
                         </div>

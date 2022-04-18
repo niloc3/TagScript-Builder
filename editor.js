@@ -74,9 +74,25 @@ CodeMirror.defineSimpleMode("tse", {
 	],
 });
 
-var editor = CodeMirror(document.getElementById('code'), {
+let editor = CodeMirror(document.getElementById('code'), {
   value: "",
   mode: "tse",
   theme: "tse",
   lineWrapping: true,
+});
+
+document.getElementsByClassName('CodeMirror')[0].addEventListener('keyup', key => {
+  const opening = editor.getValue().split("{").length - 1;
+	const closing = editor.getValue().split("}").length - 1;
+  if (opening !== closing) {
+    document.getElementById('isBalanced').innerHTML = "❌"
+  } else {
+    document.getElementById('isBalanced').innerHTML = "✅"
+  }
+
+  console.log(editor.doc.size)
+  
+  document.getElementById('charCount').innerHTML = editor.getValue().split('').length
+  document.getElementById('lineCount').innerHTML = editor.doc.size
+  
 });
