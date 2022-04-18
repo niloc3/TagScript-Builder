@@ -96,3 +96,17 @@ document.getElementsByClassName('CodeMirror')[0].addEventListener('keyup', key =
   document.getElementById('lineCount').innerHTML = editor.doc.size
   
 });
+
+// editor.getDoc().setValue(editor.getValue() + '\n\nvar msg = "Hi";');
+const data = JSON.parse(tagData)
+
+document.addEventListener('click', (event) => {
+  if (!event.target.nodeName === 'BUTTON' || !event.target.id.startsWith('modal-')) return;
+  const category = event.target.id.split('-')[1]
+  const resource = event.target.id.split('-')[2]
+  console.log(category, resource)
+
+  
+
+  editor.getDoc().setValue(editor.getValue() + '\n\n' + data[category-1][resource-1].content);
+})
