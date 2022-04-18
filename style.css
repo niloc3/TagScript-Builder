@@ -32,3 +32,7 @@
   background-color: #556BF9 !important;
   border-color: #556BF9 !important;
 }
+
+.h-100vh {
+  height: 100vh !important;
+}
